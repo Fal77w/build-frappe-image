@@ -30,7 +30,7 @@ on:
 
 jobs:
   Build-Image:
-    runs-on: ${{ vars.BUILD_IMAGE_RUNNER }}
+    runs-on: self-hosted
 
     steps:
       - name: Checkout
