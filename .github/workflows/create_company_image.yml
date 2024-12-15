@@ -45,6 +45,11 @@ jobs:
       #     registry: harbor.fintechsys.net
       #     username: robot$208
       #     password: QldhOtE5WH6euyL65C6cQGjDXP6ETjW0
+      - name: chmod
+        run: |
+          chmod +x build_image.sh
+          chmod +x build_network_company_image.sh
+          chmod +x build_template.sh
           
         #cd ~/remittance_image_builder
       - name: build image
